@@ -15,5 +15,5 @@ export default defineConfig({
 // this will show pages on github// 
 ({
   plugins: [react()],
-  base: "/your-github-repo-name/",
+  base: "/E-commerce-site/",
 });

@@ -1,4 +1,6 @@
 {
+  "homepage": "https://jetandhar-kumar.github.io/E-commerce-site/",
+
   "name": "e-commerce-site",
   "private": true,
   "version": "0.0.0",
@@ -7,7 +9,8 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.17",
@@ -32,4 +35,6 @@
     "globals": "^15.15.0",
     "vite": "^6.2.0"
   }
+
+
 }
