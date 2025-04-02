@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ✅ Main Container - Centers Everything */
+.slider_containt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f2f3; /* Changed background color to black */
+    padding: 20px;
+    width: 102%;
+    position: relative; /* Added for arrow positioning */
+}
+
+/* ✅ Slider Wrapper - Limits Width */
+.slider-wrapper {
+    width: 100%;
+    max-width: 1100px; /* Prevents excessive width */
+    overflow: hidden;
+    
+}
+
+/* ✅ Individual Slide Styling */
+.banner_slide_item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+/* ✅ Left Side (Text) */
+.banner_text {
+    width: 50%;
+    text-align: left;
+    color: black;
+    font-size: x-large; /* Adjusted font size */
+    padding-left: 70px;
+}
+.but_shop{
+    width: 110px;
+    display: flex;
+    background-color: #029fae;
+    font-size: medium;
+    height: 40px;
+    justify-content: space-between;
+    padding: 6px;
+    border-radius: 10px;
+    transition: 0.5s ease;
+    margin-top: 2px;
+}
+.but_shop:hover{
+    opacity: 0.7;
+    transform: scale(1.1);
+    transition: 0.5s ease;
+}
+
+/* ✅ Right Side (Image) */
+.banner_image {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.banner_image img {
+    padding-top: 10px;
+    padding-right: 135px;    
+    width: 100%;
+    max-width: 400px; /* Reduced max width */
+    height: auto;
+    object-fit: cover; /* Prevents distortion */
+}
+
+/* ✅Arrow Styling */
+.custom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    z-index: 10;
+}
+
+.custom-arrow:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker on hover */
+}
+
+/* Left Arrow */
+.prev-arrow {
+    left: 10px;
+}
+
+/* Right Arrow */
+.next-arrow {
+    right: 10px;
+}
